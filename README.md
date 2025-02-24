@@ -9,16 +9,26 @@ This is a simple Flask-based web application that implements user authentication
 <ol>✅ Temporary redirect page with a countdown before loading the profile</ol>
 
 <h2>📂Project Structure</h2>
-Leyman-HW2/
-│-- static/
-│   │-- dooropen.jpg
-    │-- doorclosed.jpg
-│-- templates/
-│   │-- login.html
-│   │-- redirect.html
-│   │-- profile.html
-│-- app.py
-│-- README.md
+<ul>
+        <li><strong>Leyman-HW2/</strong></li>
+        <ul>
+            <li><strong>static/</strong>
+                <ul>
+                    <li>dooropen.jpg - Example image used in profile page</li>
+                    <li>doorclosed.jpg - Example image used in profile page</li>
+                </ul>
+            </li>
+            <li><strong>templates/</strong>
+                <ul>
+                    <li>login.html - User login page</li>
+                    <li>redirect.html - Intermediate page with a countdown</li>
+                    <li>profile.html - User profile page</li>
+                </ul>
+            </li>
+            <li>app.py - Main Flask application</li>
+            <li>README.md - Project documentation</li>
+        </ul>
+    </ul>
 
 <h2>🛠How It Works</h2>
 
