@@ -1,14 +1,14 @@
-📜<h2>Profile Redirect Web Application</h2>
+<h2>📜Profile Redirect Web Application</h2>
 
 This is a simple Flask-based web application that implements user authentication. After a successful login, the user is redirected to an intermediate page for 5 seconds before being taken to their profile.
 
-🚀<h2>Features</h2>
+<h2>🚀Features</h2>
 
 <ol>✅ User authentication using MongoDB</ol>
 <ol>✅ Session management with Flask</ol>
 <ol>✅ Temporary redirect page with a countdown before loading the profile</ol>
 
-📂<h2>Project Structure</h2>
+<h2>📂Project Structure</h2>
 Leyman-HW2/
 │-- static/
 │   │-- dooropen.jpg
@@ -20,14 +20,14 @@ Leyman-HW2/
 │-- app.py
 │-- README.md
 
-🛠<h2>How It Works</h2>
+<h2>🛠How It Works</h2>
 
 1. User logs in on localhost:5000/ through login.html.
 2. If credentials are correct, the session is created.
 3. The user is redirected to localhost:5000/redirect, where they see a countdown for 5 seconds before being taken to localhost:5000/profile.
 4. The profile page welcomes the user and provides a logout option.
 
-📷<h2>Images showing the website's work</h2>
+<h2>📷Images showing the website's work</h2>
 ![image](https://github.com/user-attachments/assets/49852ed6-7e8c-416c-8e39-5d9568b6b061)
 MongoDBCompass showing data in it.
 ![image](https://github.com/user-attachments/assets/52739537-7bd8-43d0-b910-eeb422dcd3fb)
