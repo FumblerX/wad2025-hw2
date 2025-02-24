@@ -38,7 +38,8 @@ This is a simple Flask-based web application that implements user authentication
 4. The profile page welcomes the user and provides a logout option.
 
 <h2>📷Images showing the website's work</h2>
-![image](https://github.com/user-attachments/assets/49852ed6-7e8c-416c-8e39-5d9568b6b061)
+![image](https://github.com/user-attachments/assets/6815facb-f542-48ca-9fe6-cf087e1f6513)
+
 MongoDBCompass showing data in it.
 ![image](https://github.com/user-attachments/assets/52739537-7bd8-43d0-b910-eeb422dcd3fb)
 Same info, but using mingosh.
