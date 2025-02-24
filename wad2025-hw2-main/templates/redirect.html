@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <meta http-equiv="refresh" content="6;url={{ url_for('profile') }}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: 100px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .countdown {
+            font-size: 24px;
+            color: #dc3545;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Welcome, {{ username }}!</h2>
+        <div class="image-container">
+            <img src="static/dooropen.jpg" class="profile-image" style="max-width: 25%">
+        </div>
+        <p>You will be redirected to your profile in <span id="countdown">5</span> seconds.</p>
+        <div class="countdown" id="countdown-message"></div>
+    </div>
+
+    <script>
+        let countdownElement = document.getElementById("countdown");
+        let countdownMessage = document.getElementById("countdown-message");
+        let timeLeft = 5;
+        const countdownInterval = setInterval(() => {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                countdownMessage.textContent = "Redirecting now...";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
